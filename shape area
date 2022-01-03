@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class shapearea
+{
+void calculatearea(float a)
+{
+System.out.println("\n Area of square="+a*a);
+}
+void calculatearea(int l,int b)
+{
+System.out.println("\n Area of rectangle="+l*b);
+}
+void calculatearea(double b,double h)
+{
+double area=(b*h)/2;
+System.out.println("\n Area of triangle="+area);
+}
+void calculatearea(double r)
+{
+double area=3.14*r*r;
+System.out.println("\n Area of circle="+area);
+}
+public static void main(String args[])
+{
+shapearea obj=new shapearea();
+System.out.println("ENTER SIDE OF SQUARE");
+Scanner sc=new Scanner(System.in);
+float side=sc.nextFloat();
+obj.calculatearea(side);
+
+System.out.println("ENTER RADIUS");
+Scanner sc1=new Scanner(System.in);
+double rad=sc.nextDouble();
+obj.calculatearea(rad);
+
+System.out.println("ENTER SIDE OF RECTANGLE");
+Scanner sc2=new Scanner(System.in);
+int side1=sc.nextInt();
+int side2=sc.nextInt();
+obj.calculatearea(side1,side2);
+
+System.out.println("ENTER SIDE OF TRIANGLE");
+Scanner sc3=new Scanner(System.in);
+
+double l=sc.nextDouble();
+
+double b=sc.nextDouble();
+obj.calculatearea(l,b);
+}
+
+}
