@@ -1,0 +1,41 @@
+public class StringManipulation
+{
+public static void main(String[] args)
+{
+System.out.println("\n ##Creating of Strings##");
+char arrSample[]={'B','L','U','E'};
+String strSample1=new String(arrSample);
+System.out.println("created from char using new String:"+strSample1);
+byte ascii[]={65,66,67,68,69,70};
+String strSample2=new String(ascii);
+System.out.println(" Created from byte[]:"+strSample2);
+System.out.println("\n ##String of length##");
+System.out.println(" length of " + strSample1 + " is " +strSample1.length());
+System.out.println("\n ##String Concatenation##");
+String strSample3=strSample1.concat(strSample2);
+System.out.println("Using concat():"+strSample3);
+String strSample4=strSample1+strSample2;
+System.out.println("using+operator: "+strSample4);
+System.out.println("\n ##Character Extraction##");
+System.out.println("character at 3rd position in " +strSample4+ " is " +strSample4.charAt(3));
+System.out.println("\n ##String Comparison##");
+String strSample="SuperStar";
+System.out.println("Compare 'SuperStar' To 'SUPERSTAR': "+strSample.compareTo("SUPERSTAR"));
+System.out.println(" 'SuperStar' equals('SUPERSTAR')is:"+strSample.equals("SUPERSTAR"));
+System.out.println("##Using indexOf##");
+System.out.println("indexof t in 'SuperStar' is:"+strSample.indexOf("t"));
+System.out.println("indexof 'star' in 'SuperStar' is: "+strSample.indexOf("Star"));
+System.out.println("##Changing case of characters in the string##");
+System.out.println("All caps 'SuperStar':"+strSample.toUpperCase());
+System.out.println("All small letters 'SuperStar':"+strSample.toLowerCase());
+System.out.println("##Using replace##");
+System.out.println("in 'SuperStar' replace 'star' with 'ior' "+strSample.replace("Star","ior"));
+System.out.println("\n ##Data conversion##");
+String dVal="3.456";
+String iVal="6";
+System.out.println("Double.valueOf(dVal)is:" +Double.valueOf(dVal));
+System.out.println("Integer.valueOf(iVal)is:" +Integer.valueOf(iVal));
+
+}
+
+}
